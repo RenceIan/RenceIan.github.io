@@ -1,0 +1,106 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #18181b;
+    color: #f3f3f3;
+}
+.bg-dark, .bg-black {
+    background-color: #18181b !important;
+}
+.text-info {
+    color: #00bcd4 !important;
+}
+.navbar-brand {
+    color: #00bcd4 !important;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.btn-info, .btn-outline-info {
+    border-color: #00bcd4;
+    color: #00bcd4;
+    background: transparent;
+}
+.btn-info {
+    background: #00bcd4;
+    color: #18181b;
+}
+.btn-info:hover, .btn-outline-info:hover {
+    background: #0097a7;
+    color: #fff;
+    border-color: #0097a7;
+}
+.card.bg-dark {
+    background: #18181b !important;
+    border-color: #00bcd4 !important;
+}
+.card-title.text-info {
+    color: #00bcd4 !important;
+}
+.border-info {
+    border-color: #00bcd4 !important;
+}
+.footer-bottom {
+    color: #00bcd4;
+    font-size: 0.95rem;
+    margin-top: 18px;
+}
+.footer-social {
+    position: relative;
+}
+.footer-social a {
+    position: relative;
+    display: inline-block;
+}
+.footer-social a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%);
+    opacity: 0.85;
+    z-index: 0;
+    transition: opacity 0.2s;
+}
+.footer-social a:hover::before {
+    opacity: 1;
+}
+.footer-social img {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    filter: drop-shadow(0 2px 6px #00bcd4aa);
+    transition: transform 0.2s;
+    position: relative;
+    z-index: 1;
+    background: none !important;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    background-clip: initial;
+    color: initial;
+}
+.footer-social a:hover img {
+    transform: scale(1.15);
+}
+.rounded-4 {
+    border-radius: 18px !important;
+}
+.border-4 {
+    border-width: 4px !important;
+}
+/* Improve readability for secondary/muted text and card text on dark backgrounds */
+.text-secondary, .text-muted {
+    color: #b0e0ef !important;
+}
+.card-text, .footer, .footer * {
+    color: #e0e0e0 !important;
+}
+@media (max-width: 900px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
