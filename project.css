@@ -1,0 +1,131 @@
+/*
+  projects.css - Bootstrap-aligned accent and card overrides for Projects page
+  Only custom accent color and minor overrides, all layout handled by Bootstrap
+*/
+
+.card-title.text-info {
+  color: #00bcd4 !important;
+}
+
+.card.bg-dark.border-info {
+  border-width: 2px;
+  box-shadow: 0 2px 16px 0 rgba(0,188,212,0.08);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.card.bg-dark.border-info:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 4px 32px 0 rgba(0,188,212,0.18);
+  border-color: #00bcd4;
+}
+
+.badge.bg-info.text-dark {
+  background: #00bcd4 !important;
+  color: #222 !important;
+  font-weight: 600;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.footer {
+  border-top: 2px solid #00bcd4;
+}
+
+.footer-social img {
+  filter: grayscale(1) brightness(1.2);
+  transition: filter 0.2s;
+}
+.footer-social img:hover {
+  filter: none;
+}
+
+body.bg-dark {
+  background: #181a1b !important;
+}
+
+h2.fw-bold {
+  color: #00bcd4;
+}
+
+.projects-main {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #18181b;
+}
+.projects-section {
+    background: #232326;
+    padding: 40px 32px 32px 32px;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(0,188,212,0.10);
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+.projects-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 12px;
+}
+.projects-section p {
+    color: #bdbdbd;
+    font-size: 1.05rem;
+    margin-bottom: 24px;
+}
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: center;
+    margin-top: 18px;
+}
+.project-card {
+    background: #18181b;
+    border: 2px solid #00bcd4;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,188,212,0.08);
+    width: 320px;
+    padding: 24px 18px;
+    text-align: left;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.project-card:hover {
+    box-shadow: 0 6px 24px #00bcd4aa;
+    transform: translateY(-4px) scale(1.03);
+}
+.project-card h3 {
+    font-size: 1.18rem;
+    font-weight: 700;
+    color: #00bcd4;
+    margin-bottom: 8px;
+}
+.project-card p {
+    font-size: 1rem;
+    color: #bdbdbd;
+    margin-bottom: 10px;
+}
+.project-tags {
+    display: inline-block;
+    background: #232326;
+    color: #00bcd4;
+    font-size: 0.95rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+@media (max-width: 1000px) {
+    .projects-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects-section {
+        max-width: 98vw;
+        padding: 24px 8px 18px 8px;
+    }
+    .project-card {
+        width: 98vw;
+        max-width: 340px;
+    }
+}
